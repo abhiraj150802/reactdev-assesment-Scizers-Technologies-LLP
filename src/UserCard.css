@@ -1,0 +1,48 @@
+/* UserCard.css */
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .user-card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust card width for three cards in a row */
+    margin-bottom: 20px; /* Add margin between cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .user-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .user-info h2 {
+    margin-top: 0;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+  }
+  
+  .user-info p:first-child {
+    margin-top: 0;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .user-card {
+      flex: 0 0 calc(50% - 20px); /* Adjust card width for two cards in a row */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 576px) {
+    .user-card {
+      flex: 0 0 calc(100% - 20px); /* Adjust card width for one card in a row */
+    }
+  }
+  
